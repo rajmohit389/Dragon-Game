@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.gamecontainer{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position:center;
+    height: 100vh;
+    width: 100%;
+}
+.dino{
+    background-image: url(dino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 218px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+}
+.dragon{
+    background-image: url(dragon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 195px;
+    height: 130px;
+    position: absolute;
+    bottom: 0;
+    left: 100vw;
+}
+.gameover{
+    visibility: hidden;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    width: 39%;
+    top: 14%;
+    padding: 25px 12px;
+    font-family: cursive;
+    background-image: url(bag.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 100%;
+    border-radius: 32px;
+    border: 2px solid black;
+}
+#first{
+    font-size: 28px;
+}
+.high{
+    font-size: 21px;
+}
+#second{
+    font-size: 55px;
+}
+#third,#fourth{
+    font-size: 20px;
+}
+#again{
+    margin: 12px 0px;
+    padding: 3px 8px;
+    font-size: 21px;
+    border-radius: 8px;
+    /* cursor: pointer; */
+}
+.score{
+    max-width: 20%;
+    border: 2px solid rgb(10, 2, 87);
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+#zero{
+    max-width: 20%;
+    border: 2px solid rgb(10, 2, 87);
+    font-size: 30px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+/* .animateDragon{
+    animation:dragon 3s linear infinite;
+}
+@keyframes dragon{
+    0%{
+        left: 110vw;
+    }
+    50%{
+        left:50vw;
+    }
+    100%{
+        left: -10vw;
+    }
+} */
+
+.animateDino{
+    animation: dino 1.5s linear;
+}
+@keyframes dino{
+    0%{
+        bottom: 0;        
+    }
+    50%{
+        bottom:42%;
+    }
+    100%{
+        bottom: 0;        
+    }
+}
